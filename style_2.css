@@ -1,0 +1,2125 @@
+/*
+
+Theme Name: Twenty Ten
+
+Theme URI: http://wordpress.org/
+
+Description: The 2010 theme for WordPress is stylish, customizable, simple, and readable -- make it yours with a custom menu, header image, and background. Twenty Ten supports six widgetized areas (two in the sidebar, four in the footer) and featured images (thumbnails for gallery posts and custom header images for posts and pages). It includes stylesheets for print and the admin Visual Editor, special styles for posts in the "Asides" and "Gallery" categories, and has an optional one-column page template that removes the sidebar.
+
+Author: the WordPress team
+
+Version: 1.3
+
+License: GNU General Public License
+
+License URI: license.txt
+
+Tags: black, blue, white, two-columns, fixed-width, custom-header, custom-background, threaded-comments, sticky-post, translation-ready, microformats, rtl-language-support, editor-style, custom-menu
+
+*/
+
+
+
+
+
+/* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
+
+-------------------------------------------------------------- */
+
+
+
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
+
+	margin: 0;
+
+	padding: 0;
+
+	border: 0;
+
+	outline: 0;
+
+	font-size: 100%;
+
+	vertical-align: baseline;
+
+	background: transparent;
+
+}
+
+
+
+html, body {
+
+	height: 100%;
+
+	}
+
+
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, figure, footer, header, hgroup, nav, section {display: block;}
+
+
+
+ul {list-style: none;}
+
+blockquote, q {quotes: none;}
+
+blockquote:before, blockquote:after, q:before, q:after {content: ''; content: none;}
+
+a {margin: 0; padding: 0; font-size: 100%; vertical-align: baseline;}
+
+del {text-decoration: line-through;}
+
+abbr[title], dfn[title] {border-bottom: 1px dotted #000; cursor: help;}
+
+
+
+body {line-height:1;}
+
+
+
+
+
+
+
+/* tables still need cellspacing="0" in the markup */
+
+table {border-collapse: collapse; border-spacing: 0;}
+
+th {font-weight: bold; vertical-align: bottom;}
+
+td {font-weight: normal; vertical-align: top;}
+
+hr {display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0;}
+
+
+
+/* Form Elements */
+
+input, select {vertical-align: middle;}
+
+input[type="radio"] {vertical-align: text-bottom;}
+
+input[type="checkbox"] {vertical-align: bottom;}
+
+.ie6 input {vertical-align: text-bottom;}
+
+select, input, textarea {font: 99% sans-serif;}
+
+
+
+a:hover, a:active {outline: none;}
+
+small {font-size: 85%;}
+
+strong, th {font-weight: bold;}
+
+td, td img {vertical-align: top;} 
+
+
+
+sub, sup {font-size: 75%; line-height: 0; position: relative;}
+
+sup {top: -0.5em;}
+
+sub {bottom: -0.25em;}
+
+
+
+/* standardize any monospaced elements */
+
+pre, code, kbd, samp {font-family: monospace, sans-serif;}
+
+
+
+/* hand cursor on clickable elements */
+
+.clickable, label, input[type=button], input[type=submit], button {cursor: pointer;}
+
+
+
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+
+button, input, select, textarea {margin: 0;}
+
+
+
+/* make buttons play nice in IE */
+
+button {width: auto; overflow: visible;}
+
+
+
+a, img a, img, a img {border:0;	outline:0; text-decoration:none;}
+
+
+
+/* FLOAT-elements */
+
+.fltleft {float:left;}
+
+.fltright {float:right;}
+
+
+
+/* let's clear some floats */
+
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }  
+
+.clearfix:after { clear: both; }
+
+
+
+.clrflt {
+
+	clear:both;
+
+	line-height:1px;
+
+	font-size:1px;
+
+	overflow: hidden;
+
+	height:1px;
+
+	}
+
+	
+
+.clear {
+
+	clear:both;
+
+	}
+
+
+
+body {
+
+	background:#050505 url(img/top_band.jpg) repeat-x left top;
+
+	font-family:Arial, Helvetica, sans-serif;
+
+	font-size:14px;
+
+	font-weight:normal;
+
+	color:#959595;
+
+	}
+
+	
+
+/****************css for fontface**************/
+
+
+
+ @font-face {
+
+       font-family: 'MyriadProRegular';
+
+       src: url('fonts/myriadpro-regular-webfont.eot');
+
+       src: local('☺'), 
+
+       url('fonts/myriadpro-regular-webfont.woff') format('woff'), 
+
+       url('fonts/myriadpro-regular-webfont.ttf') format('truetype'), 
+
+       url('fonts/myriadpro-regular-webfont.svg#webfontUyNumF6A') format('svg');
+
+       font-weight: normal;
+
+       font-style: normal;
+
+	}
+
+
+
+@font-face {
+
+    font-family: 'MyriadProItalic';
+
+    src: url('fonts/myriadpro-it-webfont.eot');
+
+    src: url('fonts/myriadpro-it-webfont.eot?#iefix') format('embedded-opentype'),
+
+         url('fonts/myriadpro-it-webfont.woff') format('woff'),
+
+         url('fonts/myriadpro-it-webfont.ttf') format('truetype'),
+
+         url('fonts/myriadpro-it-webfont.svg#MyriadProItalic') format('svg');
+
+    font-weight: normal;
+
+    font-style: normal;
+
+	}
+
+
+
+@font-face {
+
+    font-family: 'MyriadProBoldItalic';
+
+    src: url('fonts/myriadpro-boldit-webfont.eot');
+
+    src: url('fonts/myriadpro-boldit-webfont.eot?#iefix') format('embedded-opentype'),
+
+         url('fonts/myriadpro-boldit-webfont.woff') format('woff'),
+
+         url('fonts/myriadpro-boldit-webfont.ttf') format('truetype'),
+
+         url('fonts/myriadpro-boldit-webfont.svg#MyriadProBoldItalic') format('svg');
+
+    font-weight: normal;
+
+    font-style: normal;
+
+	}
+
+
+
+@font-face {
+
+    font-family: 'MyriadProBold';
+
+    src: url('fonts/myriadpro-bold-webfont.eot');
+
+    src: url('fonts/myriadpro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+
+         url('fonts/myriadpro-bold-webfont.woff') format('woff'),
+
+         url('fonts/myriadpro-bold-webfont.ttf') format('truetype'),
+
+         url('fonts/myriadpro-bold-webfont.svg#MyriadProBold') format('svg');
+
+    font-weight: normal;
+
+    font-style: normal;
+
+	}
+
+	
+
+@font-face {
+
+    font-family: 'HelveticaNeueBold';
+
+    src: url('fonts/helveticaneue_bold-webfont.eot');
+
+    src: url('fonts/helveticaneue_bold-webfont.eot?#iefix') format('embedded-opentype'),
+
+         url('fonts/helveticaneue_bold-webfont.woff') format('woff'),
+
+         url('fonts/helveticaneue_bold-webfont.ttf') format('truetype'),
+
+         url('fonts/helveticaneue_bold-webfont.svg#HelveticaNeueBold') format('svg');
+
+    font-weight: normal;
+
+    font-style: normal;
+
+	}
+
+
+
+@font-face {
+
+    font-family: 'HelveticaNeueRegular1';
+
+    src: url('fonts/helveticaneue-extblackcond-webfont.eot');
+
+    src: url('fonts/helveticaneue-extblackcond-webfont.eot?#iefix') format('embedded-opentype'),
+
+         url('fonts/helveticaneue-extblackcond-webfont.woff') format('woff'),
+
+         url('fonts/helveticaneue-extblackcond-webfont.ttf') format('truetype'),
+
+         url('fonts/helveticaneue-extblackcond-webfont.svg#HelveticaNeueRegular') format('svg');
+
+    font-weight: normal;
+
+    font-style: normal;
+
+	}
+
+
+
+@font-face {
+
+    font-family: 'HelveticaNeueRegular2';
+
+    src: url('fonts/helveticaneue-extblackcondobl-webfont.eot');
+
+    src: url('fonts/helveticaneue-extblackcondobl-webfont.eot?#iefix') format('embedded-opentype'),
+
+         url('fonts/helveticaneue-extblackcondobl-webfont.woff') format('woff'),
+
+         url('fonts/helveticaneue-extblackcondobl-webfont.ttf') format('truetype'),
+
+         url('fonts/helveticaneue-extblackcondobl-webfont.svg#HelveticaNeueRegular') format('svg');
+
+    font-weight: normal;
+
+    font-style: normal;
+
+	}
+
+
+
+@font-face {
+
+    font-family: 'HelveticaNeueRegular3';
+
+    src: url('fonts/helveticaneue-heavycond-webfont.eot');
+
+    src: url('fonts/helveticaneue-heavycond-webfont.eot?#iefix') format('embedded-opentype'),
+
+         url('fonts/helveticaneue-heavycond-webfont.woff') format('woff'),
+
+         url('fonts/helveticaneue-heavycond-webfont.ttf') format('truetype'),
+
+         url('fonts/helveticaneue-heavycond-webfont.svg#HelveticaNeueRegular') format('svg');
+
+    font-weight: normal;
+
+    font-style: normal;
+
+	}
+
+
+
+/****************css for fontface**************/
+
+	
+
+	
+
+/****************start css for Wrapper*****************/
+
+#wrapper {
+
+	width:920px;
+
+	min-height: 100%;
+
+	height: auto !important;
+
+	height: 100%;
+
+	margin: 0 auto -335px;
+
+	}
+
+
+
+/****************start css for Header*****************/	
+
+#header {
+
+	height:75px;
+
+	position:relative;
+
+	z-index:9999;
+
+	}
+
+	
+
+.logo {
+
+	width:222px;
+
+	height:84px;
+
+	position:absolute;
+
+	top:18px;
+
+	left:0px;
+
+	}
+
+	
+
+.logo_txt {
+
+	width:400px;
+
+	height:84px;
+
+	position:absolute;
+
+	top:54px;
+
+	left:238px;
+
+	font-family: 'MyriadProBoldItalic';
+
+	font-size:13px;
+
+	color:#f6c61b;
+
+	letter-spacing:1px;
+
+	}
+
+	
+
+.nav {
+
+	width:730px;
+
+	height:45px;
+
+	float:left;
+
+	}
+
+	
+
+.nav ul {
+
+	float:right;
+
+	}
+
+	
+
+.nav ul li {
+
+	float:left;
+
+	height:45px;
+
+	line-height:45px;
+
+	margin-left:20px;
+
+	font-family: 'MyriadProBoldItalic';
+
+	letter-spacing:1px;
+
+	}
+
+	
+
+.nav ul li a {
+
+	color:#959595;
+
+	}
+
+	
+
+.nav ul li:hover a, .nav ul li.selected a {
+
+	color:#f3c41a;
+
+	}
+
+.nav ul li.current-menu-item a {
+
+	color:#f3c41a;
+
+	}
+
+	
+
+.nav ul li.hover a{
+
+	color:#f3c41a !important;
+
+	}
+
+	
+
+.header_right {
+
+	background:url(img/usa.png) no-repeat left top;
+
+	width:182px;
+
+	height:55px;
+
+	line-height:45px;
+
+	float:right;
+
+	text-align:right;
+
+	font-family: 'HelveticaNeueRegular1';
+
+	font-style:italic;
+
+	letter-spacing:1px;
+
+	color:#f3c41a;
+
+	}
+
+	
+
+/****************start css for Banner*****************/	
+
+.banner {
+
+	height:483px;
+
+	}
+
+	
+
+.banner_slider {
+
+	width:920px;
+
+	height:320px;
+
+	position:relative;
+
+	}
+
+	
+
+.banner_info {
+
+	width:490px;
+
+	position:absolute;
+
+	top:66px;
+
+	right:0px;
+
+	font-family: 'HelveticaNeueRegular1';
+
+	font-size:58px;
+
+	color:#f6c61a;
+
+	line-height:47px;
+
+	}
+
+	
+
+.banner_info span {
+
+	margin-left:96px;
+
+	color:#fff;
+
+	}
+
+	
+
+.click_here {
+
+	font-size:18px;
+
+	height:24px;
+
+	line-height:24px;
+
+	color:#fff;
+
+	text-align:right;
+
+	padding:42px 51px 0 0;
+
+	}
+
+	
+
+.click_here img {
+
+	float:right;
+
+	margin-left:10px;
+
+	}
+
+	
+
+.banner_thumb {
+
+	height:149px;
+
+	padding:5px 0 0 0;
+
+	}
+
+	
+
+.banner_thumb ul li {
+
+	float:left;
+
+	border:5px solid #131313;
+
+	position:relative;
+
+	margin-right:4px;
+
+	}
+
+	
+
+.banner_thumb ul li.nomrgn {
+
+	margin-right:0px;
+
+	}
+
+	
+
+.banner_thumb ul li a span {
+
+	position:absolute;
+
+	bottom:0px;
+
+	right:0px;
+
+	background:url(img/thumb_btn.png) no-repeat left top;
+
+	width:100px;
+
+	height:23px;
+
+	display:block;
+
+	padding:6px 0 0 15px;
+
+	}
+
+	
+
+.banner_thumb ul li a span em {
+
+	background:url(img/tnumb_icon1.png) no-repeat left -22px;
+
+	height:22px;
+
+	line-height:22px;
+
+	display:block;
+
+	padding:0 0 0 28px;
+
+	font-family: 'HelveticaNeueRegular1';
+
+	font-size:18px;
+
+	text-transform:uppercase;
+
+	letter-spacing:1px;
+
+	color:#959595;
+
+	}
+
+	
+
+.banner_thumb ul li.icon2 a span em {
+
+	background:url(img/tnumb_icon2.png) no-repeat left -20px;
+
+	height:20px;
+
+	line-height:20px;
+
+	}
+
+	
+
+.banner_thumb ul li.icon3 a span em {
+
+	background:url(img/tnumb_icon3.png) no-repeat left -20px;
+
+	height:20px;
+
+	line-height:20px;
+
+	}
+
+	
+
+.banner_thumb ul li.icon4 a span em {
+
+	background:url(img/tnumb_icon4.png) no-repeat left -20px;
+
+	height:20px;
+
+	line-height:20px;
+
+	}
+
+	
+
+.banner_thumb ul li a {
+
+	display:block;
+
+	}
+
+	
+
+.banner_thumb ul li a img {
+
+	display:block;
+
+	}
+
+	
+
+.banner_thumb ul li:hover {
+
+	border:5px solid #f4c41a;
+
+	}
+
+	
+
+.banner_thumb ul li:hover a span {
+
+	background:url(img/thumb_btn.png) no-repeat left -29px;
+
+	cursor:pointer;
+
+	}
+
+	
+
+.banner_thumb ul li:hover a span em {
+
+	background:url(img/tnumb_icon1.png) no-repeat left top;
+
+	}
+
+	
+
+.banner_thumb ul li.icon2:hover a span em {
+
+	background:url(img/tnumb_icon2.png) no-repeat left top;
+
+	}
+
+	
+
+.banner_thumb ul li.icon3:hover a span em {
+
+	background:url(img/tnumb_icon3.png) no-repeat left top;
+
+	}
+
+	
+
+.banner_thumb ul li.icon4:hover a span em {
+
+	background:url(img/tnumb_icon4.png) no-repeat left top;
+
+	}
+
+
+
+/****************start css for Content*****************/		
+
+.content {
+
+	padding:0 0 360px 0;
+
+	}
+
+	
+
+.content_left {
+
+	background:#131313;
+
+	width:580px;
+
+	float:left;
+
+	padding:14px 20px 18px 14px;
+
+	}
+
+	
+
+.content_left.cont_right {
+
+	width:266px;
+
+	float:right;
+
+	}  
+
+	
+
+.content_left h2 {
+
+	font-family: 'MyriadProBold';
+
+	font-size:14px;
+
+	font-weight:normal;
+
+	color:#f6c61a;
+
+	letter-spacing:1px;
+
+	padding:0 0 5px 0;
+
+	}
+
+	
+
+.content_left p {
+
+	font-family: 'MyriadProRegular';
+
+	line-height:18px;
+
+	letter-spacing:1px;
+
+	padding:0 0 20px 0;
+
+	}  
+
+	
+
+.content_left a {
+
+	font-family: 'MyriadProRegular';
+
+	color:#535252;
+
+	}  
+
+	
+
+.content_left p span {
+
+	font-family: 'MyriadProBold';
+
+	color:#f6c61a;
+
+	}  
+
+	
+
+	
+
+/*******************css for Footer******************/	
+
+#footer {
+
+	background:url(img/footer_bg.jpg) repeat-x left top;
+
+	width:920px;
+
+	height:335px;
+
+	margin:0 auto;
+
+	}
+
+	
+
+.request_btn {
+
+	background:url(img/request_btn.jpg) no-repeat left top;
+
+	width:293px;
+
+	height:45px;
+
+	text-align:center;
+
+	font-family: 'HelveticaNeueRegular2';
+
+	line-height:45px;
+
+	text-transform:uppercase;
+
+	float:right;
+
+	margin-bottom:40px;
+
+	}
+
+	
+
+ .request_btn a {
+
+	color:#323232;
+
+	font-style:italic;
+
+	}
+
+	
+
+.footer_nav {
+
+	width:300px;
+
+	float:left;
+
+	font-size:11px;
+
+	color:#686868;
+
+	}
+
+	
+
+.footer_nav.footer_nav2 {
+
+	width:210px;
+
+	}
+
+	
+
+.footer_nav.footer_nav3 {
+
+	width:200px;
+
+	}
+
+	
+
+.footer_nav h3 {
+
+	font-family: 'HelveticaNeueBold';
+
+	font-size:11px;
+
+	font-weight:normal;
+
+	color:#959595;
+
+	padding:0 0 10px 0;
+
+	}
+
+	
+
+.footer_nav ul li {
+
+	margin-bottom:10px;
+
+	}
+
+
+
+.footer_nav ul li a {
+
+	color:#686868;
+
+	}
+
+
+
+.footer_nav ul li a:hover {
+
+	text-decoration:underline;
+
+	color:#686868;
+
+	}
+
+	
+
+.footer_nav p {
+
+	line-height:20px;
+
+	}
+
+	
+
+.footer_nav p a {
+
+	color:#686868;
+
+	}
+
+	
+
+.copyright {
+
+	font-family: 'HelveticaNeueRegular3';
+
+	text-align:center;
+
+	color:#323232;
+
+	font-size:11px;
+
+	letter-spacing:1px;
+
+	padding:20px 0 0 0;
+
+	}
+
+	
+
+
+
+/*******************css for Inner 1******************/	
+
+.banner_inner {
+
+	height:112px;
+
+	padding:0 0 2px 0;
+
+	position:relative;
+
+	}
+
+	
+
+.banner_inner span {
+
+	font-family: 'MyriadProBoldItalic';
+
+	font-size:20px;
+
+	color:#595958;
+
+	position:absolute;
+
+	top:56px;
+
+	left:0px;
+
+	}
+
+
+
+.sidebar {
+
+	width:230px;
+
+	float:left;
+
+	}
+
+	
+
+.side_nav {
+
+	width:225px;
+
+	}
+
+	
+
+.side_nav ul li {
+
+	border:5px solid #131313;
+
+	position:relative;
+
+	width:215px;
+
+	margin-bottom:5px;
+
+	}
+
+	
+
+.side_nav ul li a {
+
+	width:215px;
+
+	height:63px;
+
+	display:block;
+
+	}
+
+	
+
+.side_nav ul li a span {
+
+	position:absolute;
+
+	bottom:0px;
+
+	right:0px;
+
+	background:url(img/thumb_btn.png) no-repeat left top;
+
+	width:100px;
+
+	height:23px;
+
+	display:block;
+
+	padding:6px 0 0 15px;
+
+	}
+
+	
+
+.side_nav ul li a span em {
+
+	background:url(img/tnumb_icon1.png) no-repeat left -22px;
+
+	height:22px;
+
+	line-height:22px;
+
+	display:block;
+
+	padding:0 0 0 28px;
+
+	font-family: 'HelveticaNeueRegular1';
+
+	font-size:18px;
+
+	text-transform:uppercase;
+
+	letter-spacing:1px;
+
+	color:#959595;
+
+	}
+
+	
+
+.side_nav ul li:hover {
+
+	border:5px solid #f4c41a;
+
+	}
+
+	
+
+.side_nav ul li.icon2 a span em {
+
+	background:url(img/tnumb_icon2.png) no-repeat left -20px;
+
+	height:20px;
+
+	line-height:20px;
+
+	}
+
+	
+
+.side_nav ul li.icon3 a span em {
+
+	background:url(img/tnumb_icon3.png) no-repeat left -20px;
+
+	height:20px;
+
+	line-height:20px;
+
+	}
+
+	
+
+.side_nav ul li.icon4 a span em {
+
+	background:url(img/tnumb_icon4.png) no-repeat left -20px;
+
+	height:20px;
+
+	line-height:20px;
+
+	}
+
+	
+
+.side_nav ul li:hover a span {
+
+	background:url(img/thumb_btn.png) no-repeat left -29px;
+
+	cursor:pointer;
+
+	}
+
+	
+
+.side_nav ul li:hover a span em {
+
+	background:url(img/tnumb_icon1.png) no-repeat left top;
+
+	}
+
+	
+
+.side_nav ul li.icon2:hover a span em {
+
+	background:url(img/tnumb_icon2.png) no-repeat left top;
+
+	}
+
+	
+
+.side_nav ul li.icon3:hover a span em {
+
+	background:url(img/tnumb_icon3.png) no-repeat left top;
+
+	}
+
+	
+
+.side_nav ul li.icon4:hover a span em {
+
+	background:url(img/tnumb_icon4.png) no-repeat left top;
+
+	}
+
+	
+
+.question {
+
+	background:#131313;
+
+	width:197px;
+
+	height:84px;
+
+	padding:10px 14px 0 14px;
+
+	letter-spacing:1px;
+
+	}
+
+	
+
+.question h2 {
+
+	font-family: 'MyriadProBold';
+
+	font-size:14px;
+
+	color:#b4b4b4;
+
+	font-weight:normal;
+
+	padding:0 0 3px 0;
+
+	}
+
+
+
+.question p {
+
+	font-family: 'MyriadProRegular';
+
+	line-height:18px;
+
+	}
+
+	
+
+.question p a {
+
+	color:#fbfbfb;
+
+	}
+
+	
+
+.celebration {
+
+	font-family: 'HelveticaNeueRegular1';
+
+	font-size:31px;
+
+	color:#f6c61a;
+
+	line-height:26px;
+
+	padding:8px 0 0 0;
+
+	}
+
+	
+
+.celebration span {
+
+	color:#fff;
+
+	}
+
+	
+
+.category_cont {
+
+	width:660px;
+
+	float:right;
+
+	padding:42px 0 0 0;
+
+	}
+
+	
+
+.energy_cont {
+
+	padding:0 0 20px 0;
+
+	}
+
+	
+
+.energy_cont img {
+
+	float:right;
+
+	margin:0 0 50px 25px;
+
+	}
+
+	
+
+.energy_cont h1 {
+
+	font-family: 'MyriadProBold';
+
+	font-size:36px;
+
+	font-weight:normal;
+
+	color:#f6c61a;
+
+	padding:0 0 20px 0;
+
+	line-height:30px;
+
+	text-transform:uppercase;
+
+	}
+
+	
+
+.energy_cont p {
+
+	font-family: 'MyriadProRegular';
+
+	line-height:18px;
+
+	padding:0 0 15px 0;
+
+	}
+
+	
+
+/*******************css for Inner 2******************/	
+
+.about_top {
+
+	padding:25px 0 32px 0;
+
+	}
+
+	
+
+.about_top img {
+
+	float:right;
+
+	margin:0 0 50px 20px;
+
+	}
+
+	
+
+.about_top h1 {
+
+	font-family: 'MyriadProBold';
+
+	font-size:36px;
+
+	color:#f4c41a;
+
+	font-weight:normal;
+
+	line-height:31px;
+
+	padding:0 0 30px 0;
+
+	text-transform:uppercase;
+
+	}
+
+	
+
+.about_top h2 span {
+
+	color:#fff;
+
+	}
+
+	
+
+.about_top p {
+
+	font-family: 'MyriadProRegular';
+
+	line-height:18px;
+
+	padding:0 0 18px 0;
+
+	}
+
+	
+
+.rex_pic {
+
+	background:#131313;
+
+	width:250px;
+
+	float:left;
+
+	padding:10px;
+
+	}
+
+	
+
+.rex_pic img {
+
+	float:none;
+
+	margin:0px;
+
+	}
+
+	
+
+.rex_pic strong {
+
+	display:block;
+
+	font-family: 'HelveticaNeueRegular2';
+
+	font-weight:normal;
+
+	text-transform:uppercase;
+
+	color:#b4b4b4;
+
+	letter-spacing:1px;
+
+	line-height:18px;
+
+	padding:5px 0 0 0;
+
+	}
+
+	
+
+.about_top ul {
+
+	list-style:disc;
+
+	margin-left:300px;
+
+	padding:0 0 10px 0;
+
+	}
+
+	
+
+.about_top ul li {
+
+	margin-bottom:10px;
+
+	}
+
+	
+
+/*******************css for Inner 3******************/	
+
+.cont_link {
+
+	border-top:2px solid #f4c41a;
+
+	padding:20px 0 0 0;
+
+	}
+
+	
+
+.cont_link ul {
+
+	width:298px;
+
+	display:block;
+
+	}
+
+	
+
+.cont_link ul.about_link1 {
+
+	width:280px;
+
+	}
+
+	
+
+.cont_link ul.about_link2 {
+
+	width:260px;
+
+	}
+
+	
+
+.cont_link ul.about_link3 {
+
+	width:100px;
+
+	}
+
+	
+
+.cont_link ul li {
+
+	font-family: 'MyriadProBold';
+
+	font-size:15px;
+
+	margin-bottom:18px;
+
+	}
+
+
+
+.cont_link ul li a {
+
+	color:#b4b4b4;
+
+	}
+
+	
+
+.cont_link ul li:hover a {
+
+	color:#f4c41a;
+
+	}
+
+	
+
+/*******************css for Inner 4******************/	
+
+.rfp_cont {
+
+	padding:42px 0 0 52px;
+
+	}
+
+	
+
+.rfp_cont h1 {
+
+	font-family: 'HelveticaNeueRegular1';
+
+	font-size:28px;
+
+	font-weight:normal;
+
+	color:#f6c61a;
+
+	padding:0 0 10px 8px;
+
+	text-transform:uppercase;
+
+	}
+
+
+
+.rfp_left {
+
+	width:463px;
+
+	float:left;
+
+	margin-right:44px;
+
+	}
+
+	
+
+.rfp_form_top {
+
+	padding:0 8px 0 8px;
+
+	}
+
+	
+
+.name_field {
+
+	background:#1e1e1e;
+
+	width:197px;
+
+	height:17px;
+
+	line-height:17px;
+
+	border:0px;
+
+	outline:none;
+
+	font-family: 'MyriadProRegular';
+
+	color:#959595;
+
+	padding:5px 5px 5px 15px;
+
+	margin-bottom:10px;
+
+	}
+
+	
+
+.zip_field {
+
+	background:#1e1e1e;
+
+	width:65px;
+
+	height:17px;
+
+	line-height:17px;
+
+	border:0px;
+
+	outline:none;
+
+	font-family: 'MyriadProRegular';
+
+	color:#959595;
+
+	padding:5px 5px 5px 15px;
+
+	margin-bottom:10px;
+
+	}
+
+	
+
+.state_list {
+
+	width:120px;
+
+	height:27px;
+
+	float:left;
+
+	margin:0 0 0 13px;
+
+	position:relative;
+
+	}	
+
+	
+
+.state_list_bg {
+
+	width:120px;
+
+	}
+
+	
+
+.rfp_form_btm {
+
+	background:#1e1e1e;
+
+	padding:8px;
+
+	margin-bottom:20px;
+
+	}
+
+	
+
+.project_list {
+
+	width:216px;
+
+	height:27px;
+
+	float:left;
+
+	margin:0 0 9px 0;
+
+	position:relative;
+
+	}	
+
+	
+
+.project_list_bg {
+
+	width:216px;
+
+	}
+
+	
+
+.browse_box {
+
+	width:217px;
+
+	height:27px;
+
+	float:right;
+
+	margin-bottom:9px;
+
+	}
+
+	
+
+.browse {
+
+	background:#323232;
+
+	width:217px;
+
+	height:27px;
+
+	font-family: 'MyriadProRegular';
+
+	line-height:27px;
+
+	border:0px;
+
+	outline:none;
+
+	color:#959595;
+
+	}
+
+	
+
+.date_field {
+
+	background:#323232;
+
+	width:197px;
+
+	height:17px;
+
+	line-height:17px;
+
+	border:0px;
+
+	outline:none;
+
+	font-family: 'MyriadProRegular';
+
+	color:#959595;
+
+	padding:5px 5px 5px 15px;
+
+	margin-bottom:10px;
+
+	}
+
+	
+
+.des_txtarea {
+
+	background:#323232;
+
+	width:417px;
+
+	height:142px;
+
+	border:0px;
+
+	outline:none;
+
+	font-family: 'MyriadProRegular';
+
+	color:#959595;
+
+	padding:10px 15px;
+
+	overflow:auto;
+
+	resize:none;
+
+	}
+
+	
+
+.submit_area {
+
+	width:320px;
+
+	float:right;
+
+	}
+
+	
+
+.submit_btn {
+
+	background:url(img/submit_btn.jpg) no-repeat left top;
+
+	width:111px;
+
+	height:24px;
+
+	float:right;
+
+	border:0px;
+
+	cursor:pointer;
+
+	}
+
+	
+
+.check_box {
+
+	float:left;
+
+	margin:5px 9px 0 0;
+
+	}
+
+
+
+.submit_area span.wpcf7-list-item-label {
+
+	float: right;
+
+	height:24px;
+
+	line-height: 15px;
+
+	display:block;
+
+	font-family: 'MyriadProRegular';
+
+	margin-left: 5px;
+
+	}
+
+	
+
+.rfp_right {
+
+	width:300px;
+
+	float:left;
+
+	padding:78px 0 0 0;
+
+	}
+
+	
+
+.rfp_right_top {
+
+	background:#131313;
+
+	padding:70px 15px 0 15px;
+
+	position:relative;
+
+	}
+
+	
+
+.rfp_right_top h2 {
+
+	position:absolute;
+
+	top:-80px;
+
+	left:-11px;
+
+	width:303px;
+
+	height:121px;
+
+	}
+
+	
+
+.rfp_right_top p {
+
+	line-height:18px;
+
+	font-family: 'MyriadProRegular';
+
+	padding:0 0 20px 0;
+
+	}
+
+	
+
+.rfp_right_top p span {
+
+	color:#f6c61a;
+
+	}
+
+
+
+.rfp_right strong {
+
+	font-family: 'MyriadProBoldItalic';
+
+	display:block;
+
+	text-align:center;
+
+	padding:25px 0 0 0;
+
+	font-size:30px;
+
+	color:#fbbd2e;
+
+	font-weight:normal;
+
+	}
+
+	
+
+/**********************css for Dropmenu****************/
+
+.dropmenu {
+
+	background:#2d2d2d;
+
+	width:271px;
+
+	border:10px solid #323232;
+
+	position:absolute;
+
+	top:0px;
+
+	left:0px;
+
+	}
+
+	
+
+.dropmenu_nav {
+
+	height:34px;
+
+	border-bottom:2px solid #f3c41a;
+
+	}
+
+	
+
+.dropmenu_nav ul li {
+
+	height:34px;
+
+	line-height:34px;
+
+	float:left;
+
+	font-family: 'MyriadProBoldItalic';
+
+	letter-spacing:1px;
+
+	}
+
+	
+
+.dropmenu_nav ul li a {
+
+	color:#959595;
+
+	padding:0 7px;
+
+	}
+
+	
+
+.dropmenu_nav ul li:hover a, .dropmenu_nav ul li.current a {
+
+	color:#f3c41a;
+
+	}
+
+	
+
+.dropmenu_list {
+
+	padding:8px 12px;
+
+	display:none;
+
+	}
+
+	
+
+.dropmenu_list ul li {
+
+	font-family: 'MyriadProRegular';
+
+	margin-bottom:5px;
+
+	}
+
+	
+
+.dropmenu_list ul li a {
+
+	color:#888888;
+
+	}
+
+	
+
+.dropmenu_list ul li:hover a {
+
+	color:#f5c61c;
+
+	}
+
+
+
+.dropmenu_list ul li.current-menu-item a {
+
+	color:#f5c61c;
+
+	}
+
+
+
+
+
+.rfp_right_top h2 { background:url(img/rfp_head.png) no-repeat left top;
+
+	width:303px;
+
+	height:121px; margin-left: 9px; }
+
+
+
+.question p a:hover { color: #F6C61A; }
