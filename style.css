@@ -182,7 +182,10 @@ content:'\f1cb';
 }
 
 #subscribe>center>h1 {
-	color: white!important;
+    color: white!important;
+    text-transform: uppercase;
+    font-size: 24px!important;
+    letter-spacing: .07em;
 }
 
 #gform_submit_button_1 {
@@ -234,6 +237,14 @@ body {
     margin: 100px auto 15px!important;
     padding: 0 15px;
     width: 100%;
+}
+
+.gform_wrapper .gform_footer {
+    margin: .2em 0 0!important;
+}
+
+.gform_wrapper {
+    margin: 1em 2em!important;
 }
 
 
