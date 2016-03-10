@@ -46,7 +46,7 @@ get_header(); ?>
         </div>
     </div><!--end Banner-->
 
-    <div class="content"><!--start Content-->
+    <div class="content" id="wrapper"><!--start Content-->
     <div class="clientlogo"><?php dynamic_sidebar('clientlogo'); ?></div>
     <div class="want"><?php dynamic_sidebar('home-right-widget'); ?> </div>
     <div class="clear"></div>
