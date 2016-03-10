@@ -25,8 +25,8 @@ query_posts('category_name=slider&posts_per_page=1');
 while(have_posts()): the_post();
 ?>
 
-
-             <?php if (function_exists('slideshow')) { slideshow($output = true, $gallery_id = false, $post_id = false, $params = array()); } ?>
+            <?php if (function_exists('slideshow')) { slideshow($output = true, $post_id = false, $gallery_id = false, $params = array()); } ?>
+            <?php if (function_exists('slideshow')) { slideshow($output = true, $gallery_id = false, $post_id = false, $params = array()); } ?>
         	<?php //the_post_thumbnail('full'); ?>
             <div class="banner_info"><?php the_title(); ?>
             	<div class="click_here"><a href="<?php echo get_permalink(140); ?>"><img src="<?php bloginfo('template_url'); ?>/img/ourservices.png" alt="Our Services"></a>learn more about</div>
