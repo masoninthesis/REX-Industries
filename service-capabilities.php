@@ -60,7 +60,8 @@ wp_reset_query();
                 : (date("Y") - $birthDate[2]));
                 echo "" . $age;
                 ?>
-                YEARS</span> OF AMERICAN MANUFACTURING</div>
+                YEARS</span> OF AMERICAN MANUFACTURING
+              </div>
             </div>
         </div>
 
