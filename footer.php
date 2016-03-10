@@ -84,7 +84,7 @@
 
     </div>
 
-    
+
 
     <div class="footer_nav footer_nav2">
 
@@ -106,7 +106,7 @@
 
     </div>
 
-    
+
 
     <div class="footer_nav footer_nav3">
 
@@ -124,7 +124,7 @@
 
     </div>
 
-    
+
 
     <div class="footer_nav footer_nav3">
 
@@ -135,9 +135,29 @@
 
     <div class=" clrflt"></div>
 
-    
+		<div id="subscribe">
+			<center><h1 style="font-size: 44px;">Subscribe for updates:</h1</center>
+			<?php
+			echo do_shortcode('[gravityform id="1" title="false" description="false"]');
+			?>
+		</div>
 
-    <div class="copyright"><?php dynamic_sidebar('copyright'); ?></div>
+
+
+		<center>
+			<div id="social-icons">
+			  <a href="https://www.facebook.com/pages/REX-Industries/104704139595810"><span>Facebook</span></a>
+			  <a href="https://twitter.com/rex_industries"><span>Twitter</span></a>
+			  <a href="https://www.linkedin.com/in/rexindustries"><span>LinkedIn</span></a>
+			</div>
+		</center>
+
+
+		<div class="copyright">
+			<div>
+				<div class="textwidget"><span style="line-height:30px;">COPYRIGHT <script type="text/javascript"> var d = new Date(); var n = d.getFullYear(); document.write(n); </script> REX INDUSTRIES  |  <a style="color:#323232;" href="http://www.jigmogroup.com">A JIGMO SITE</a></span></div>
+			</div>
+		</div>
 
 </div><!--end Footer-->
 
@@ -162,4 +182,3 @@
 </body>
 
 </html>
-

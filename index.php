@@ -41,7 +41,12 @@ wp_reset_query();
 
 
         </div>
-        
+        <div id="subscribe">
+    			<center><h1 style="font-size: 44px;">Subscribe for updates:</h1</center>
+    			<?php
+    			echo do_shortcode('[gravityform id="1" title="false" description="false"]');
+    			?>
+    		</div>
         <div class="banner_thumb">
         <h1 class="prohecttitle">SELECT A PROJECT CATEGORY</h1>
         	<!--<ul>
@@ -54,7 +59,7 @@ wp_reset_query();
             <div class="clear"></div>
         </div>
     </div><!--end Banner-->
-    
+
     <div class="content"><!--start Content-->
     <div class="clientlogo"><?php dynamic_sidebar('clientlogo'); ?></div>
     <div class="want"><?php dynamic_sidebar('home-right-widget'); ?> </div>
@@ -62,7 +67,7 @@ wp_reset_query();
     	<div class="content_left">
             <?php dynamic_sidebar('home-left-widget'); ?>
         </div>
-        
+
         <div class="content_left cont_right">
             <?php dynamic_sidebar('ourservices'); ?>
         </div>

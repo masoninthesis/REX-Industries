@@ -74,6 +74,8 @@
 
 <link href="<?php bloginfo('stylesheet_directory'); ?>/css/dd.css" rel="stylesheet" type="text/css">
 
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
 
 
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery-1.7.1.min.js"></script>
@@ -106,9 +108,9 @@ try {
 
    }
 
-   
 
-   $("input[type=file]").filestyle({ 
+
+   $("input[type=file]").filestyle({
 
      image: "<?php bloginfo('template_url'); ?>/img/browse_btn.jpg",
 
@@ -120,7 +122,7 @@ try {
 
  });
 
- 
+
 
 });
 
@@ -166,7 +168,7 @@ $(document).ready(function(){
 
 			$('.nav ul li').removeClass('hover');
 
-			
+
 
 		});
 
@@ -178,7 +180,7 @@ $('.nav ul li.service').mouseleave(function(){
 
 	});
 
-});  
+});
 
 </script>
 
@@ -256,11 +258,11 @@ $('.nav ul li.service').mouseleave(function(){
 
             <div class="clear"></div>
 
-            
 
-            
 
-            
+
+
+
 
         </div>
 
@@ -310,11 +312,11 @@ $('.nav ul li.service').mouseleave(function(){
 
             </div> */?>
 
-            
+
 
             <div class="tab_content">
 
-            
+
 
              <div class="dropmenu_list panes" style="display:block;">
 
@@ -330,9 +332,9 @@ $('.nav ul li.service').mouseleave(function(){
 
 				<?php wp_nav_menu( array('menu' => 'services-capabilities', 'menu_id' => '',  'menu_class' => '', 'container' => ''  )); ?>
 
-            </div>	
+            </div>
 
-            <?php /*	
+            <?php /*
 
             <div class="dropmenu_list panes" style="display:block;">
 
@@ -350,7 +352,7 @@ $('.nav ul li.service').mouseleave(function(){
 
             </div>
 
-            
+
 
             <div class="dropmenu_list panes">
 
@@ -372,7 +374,7 @@ $('.nav ul li.service').mouseleave(function(){
 
             </div>
 
-            
+
 
             <div class="dropmenu_list panes">
 
@@ -396,7 +398,7 @@ $('.nav ul li.service').mouseleave(function(){
 
             </div>
 
-            
+
 
             <div class="dropmenu_list panes">
 
@@ -424,7 +426,7 @@ $('.nav ul li.service').mouseleave(function(){
 
             </div> */ ?>
 
-            </div> 
+            </div>
 
         </div>
 
