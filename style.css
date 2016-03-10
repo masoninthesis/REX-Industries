@@ -150,13 +150,13 @@ content:'\f1cb';
 }
 
 .gform_wrapper .hidden_label input.large, .gform_wrapper .hidden_label select.large, .gform_wrapper .top_label input.large, .gform_wrapper .top_label select.large {
-    width: 66%!important;
+    width: 33%!important;
     margin: auto;
     display: block;
 }
 
 .gform_wrapper input[type=email], .gform_wrapper input[type=number], .gform_wrapper input[type=password], .gform_wrapper input[type=tel], .gform_wrapper input[type=text], .gform_wrapper input[type=url] {
-    font-size: 32px!important;
+    font-size: 18px!important;
 }
 
 .gform_wrapper .gform_footer {
@@ -166,14 +166,14 @@ content:'\f1cb';
 #gform_submit_button_1 {
 	background: #FDBD00;
 	padding: 3px 60px 0 60px;
-	line-height: 60px;
+	line-height: 36px;
 	text-align: center;
 	color: #303030;
-	border-radius: 2px;
+	border-radius: 0;
 	display: block!important;
 	margin: auto;
 	border: none;
-	width: 66%;
+	width: 33%;
 	font-size: 20px;
 }
 
@@ -196,15 +196,15 @@ body {
 }
 
 .gform_wrapper input[type=email], .gform_wrapper input[type=number], .gform_wrapper input[type=password], .gform_wrapper input[type=tel], .gform_wrapper input[type=text], .gform_wrapper input[type=url] {
-    padding: .5em 0 .3em 0!important;
-		text-indent: .5em!important;
+  padding: .3em 0 .2em 0!important;
+  text-indent: .5em!important;
 }
 
 #input_1_1 {
     background: white;
     color: black!important;
     font-size: 10px;
-    border-radius: 4px;
+    border-radius: 0;
 }
 
 #gform_confirmation_message_1 {
@@ -231,7 +231,7 @@ body {
 }
 
 #footer {
-    margin: 100px auto 15px;
+    margin: 100px auto 15px!important;
     padding: 0 15px;
     width: 100%;
 }
