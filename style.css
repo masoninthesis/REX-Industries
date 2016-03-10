@@ -25,6 +25,16 @@ body {
     color: #959595;
 }
 
+
+/* Header */
+
+.banner_info {
+    width: 100%!important;
+    float: right!important;
+    padding: 6vh!important;
+		position: inherit!important;
+}
+
 /* Social Icons Start */
 
 #social-icons>body {
