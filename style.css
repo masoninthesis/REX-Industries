@@ -214,7 +214,7 @@ body {
 }
 
 #wrapper {
-    min-height: none!important;
+    min-height: 0!important;
 }
 
 
