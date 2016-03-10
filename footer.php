@@ -146,9 +146,9 @@
 
 		<center>
 			<div id="social-icons">
-			  <a href="https://www.facebook.com/pages/REX-Industries/104704139595810"><span>Facebook</span></a>
-			  <a href="https://twitter.com/rex_industries"><span>Twitter</span></a>
-			  <a href="https://www.linkedin.com/in/rexindustries"><span>LinkedIn</span></a>
+			  <a href="https://www.facebook.com/getrexindustries/" target="_blank"><span>Facebook</span></a>
+			  <a href="https://twitter.com/rex_industries" target="_blank"><span>Twitter</span></a>
+			  <a href="https://www.linkedin.com/in/rexindustries" target="_blank"><span>LinkedIn</span></a>
 			</div>
 		</center>
 

@@ -27,12 +27,12 @@ get_header(); ?>
 
 
 
-        <div id="subscribe">
+        <!-- <div id="subscribe">
     			<center><h1 style="font-size: 44px;">Subscribe for updates:</h1</center>
     			<?php
     			echo do_shortcode('[gravityform id="1" title="false" description="false"]');
     			?>
-    		</div>
+    		</div> -->
         <div class="banner_thumb">
         <h1 class="prohecttitle">SELECT A PROJECT CATEGORY</h1>
         	<!--<ul>
