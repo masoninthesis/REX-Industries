@@ -213,6 +213,10 @@ body {
 	    color: #FDBD00;
 }
 
+#wrapper {
+    min-height: none;
+}
+
 
 /* Jackalope CSS End */
 
