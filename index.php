@@ -26,14 +26,14 @@ get_header(); ?>
             </div> -->
         <div class="banner_thumb">
         <h1 class="prohecttitle">SELECT A PROJECT CATEGORY</h1>
-        	<!-- <ul>
+        	<ul>
             	<li><a href="#"><img src="<?php bloginfo('template_url'); ?>/img/thumb_pic1.jpg" alt=""><span><em>Energy</em></span></a></li>
               <li class="icon2"><a href="#"><img src="<?php bloginfo('template_url'); ?>/img/thumb_pic2.jpg" alt=""><span><em>POWER</em></span></a></li>
               <li class="icon3"><a href="#"><img src="<?php bloginfo('template_url'); ?>/img/thumb_pic3.jpg" alt=""><span><em>MINING</em></span></a></li>
               <li class="nomrgn icon4"><a href="#"><img src="<?php bloginfo('template_url'); ?>/img/thumb_pic4.jpg" alt=""><span><em>CUSTOM</em></span></a></li>
-          </ul> -->
-			<?php wp_nav_menu( array('menu' => 'home-nav', 'menu_id' => '',  'menu_class' => '', 'container' => ''  )); ?>
-            <div class="clear"></div>
+          </ul>
+			<!-- <?php wp_nav_menu( array('menu' => 'home-nav', 'menu_id' => '',  'menu_class' => '', 'container' => ''  )); ?>
+            <div class="clear"></div> -->
         </div>
     </div><!--end Banner-->
 
