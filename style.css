@@ -307,14 +307,65 @@ body {
     width: 100%!important;
     margin: 8px 0 25px!important;
   }
+  .content h1, .content h2 {
+    margin-bottom: 50px;
+    text-align: center;
+  }
   .content_left {
     width: 100%!important;
     padding: 0!important;
+    float: none!important;
+    margin-top: 36px!important;
   }
   .content_left.cont_right {
-    display: none;
+    display: none!important;
+  }
+  .want {
+    height: 100%!important;
+  }
+  .want p {
+    line-height: 62px!important;
+    font-size: 50px!important;
+    text-align: center!important;
+  }
+  .content_left p {
+    line-height: 62px!important;
+    font-size: 50px!important;
+    text-align: center!important;
+  }
+  .content_left a {
+    font-size: 70px!important;
+    line-height: 88px!important;
+    color: #FDBD00!important;
+  }
+  .widget-title a {
+    line-height: 252px!important;
+  }
+  .footer_nav {
+    display: none!important;
+  }
+  #social-icons>a {
+    padding-top: 50px;
+    width: 140px;
+    height: 68px;
+  }
+  #subscribe>center>h1 {
+    font-size: 52px!important;
+  }
+  .gform_wrapper .hidden_label input.large, .gform_wrapper .hidden_label select.large, .gform_wrapper .top_label input.large, .gform_wrapper .top_label select.large {
+    width: 80%!important;
+  }
+  .gform_wrapper input[type=text], .gform_wrapper input[type=url] {
+    font-size: 44px!important;
+  }
+  #gform_submit_button_1 {
+    width: 80%!important;
+    font-size: 42px!important;
+    line-height: 72px!important;
   }
 }
+
+
 
 /* Jackalope CSS End */
 

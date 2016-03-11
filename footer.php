@@ -136,7 +136,7 @@
     <div class=" clrflt"></div>
 
 		<div id="subscribe">
-			<center><h1 style="font-size: 44px;">Subscribe for updates:</h1</center>
+			<center><h1 style="font-size: 44px;">Request for Proposal:</h1</center>
 			<?php
 			echo do_shortcode('[gravityform id="1" title="false" description="false"]');
 			?>
