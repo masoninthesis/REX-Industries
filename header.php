@@ -25,7 +25,6 @@
 <head>
 
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
-
 <title><?php
 
 	/*

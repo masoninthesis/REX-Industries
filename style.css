@@ -248,6 +248,57 @@ body {
 }
 
 
+/* Responsive & Media Queries */
+
+.banner_info {
+  font-size: 96px;
+}
+
+@media only screen and (max-width: 500px) {
+  .banner_info {
+      font-size: 58px!important;
+    }
+}
+
+.click_here {
+  display: none;
+}
+
+.prohecttitle {
+  font-size: 60px;
+  padding: 20px 0 10px 0!important;
+  text-align: center!important;
+}
+
+.banner_thumb ul li a span {
+    position: absolute;
+    bottom: 38%!important;
+    right: 40%!important;
+    background: none!important;
+    width: 100px;
+    height: 23px;
+    display: block;
+    padding: 6px 0 0 15px;
+}
+
+.banner_thumb ul li a span:hover {
+    background: none!important;
+}
+
+
+.banner_thumb ul li a span em {
+    background: none;
+    height: 22px;
+    line-height: 22px;
+    display: block;
+    padding: 0 0 0 28px;
+    font-family: 'HelveticaNeueRegular1';
+    font-size: 36px!important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white!important;
+}
+
 /* Jackalope CSS End */
 
 
@@ -558,7 +609,6 @@ body {
 	top:66px;
 	right:44px;
 	font-family: 'HelveticaNeueRegular1';
-	font-size:58px;
 	color:#FDBD00;
 	line-height:47px;
     text-align: right;
