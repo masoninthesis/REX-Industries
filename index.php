@@ -15,7 +15,7 @@
 
 get_header(); ?>
 
-      <div style="height:300px;width:100%;background:url('http://www.rexindustries.com/wp-content/uploads/2016/03/slide3.jpg');">
+      <div class="banner-img">
         <div class="banner_info"><?php the_title(); ?>
           <div class="click_here"><a href="<?php echo get_permalink(140); ?>"><img src="<?php bloginfo('template_url'); ?>/img/ourservices.png" alt="Our Services"></a>learn more about</div>
         </div>

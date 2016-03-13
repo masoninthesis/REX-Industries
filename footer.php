@@ -22,6 +22,23 @@
 
 ?>
 
+<div class="cta-btns" id="wrapper">
+	<div class="rr rr-left">
+		<a href="http://www.rexindustries.com/tell-us-about-your-project/">
+			<div>
+				<h2>Tell Us About Your Project</h2>
+			</div>
+		</a>
+	</div>
+	<div class="rr rr-right">
+		<a href="http://www.rexindustries.com/request-for-proposal/">
+			<div>
+				<h2>Request for Proposal</h2>
+			</div>
+		</a>
+	</div>
+</div>
+
 <div id="footer"><!--start Footer-->
 
 
@@ -38,7 +55,7 @@
 
 
 
-	<div class="request_btn"><?php dynamic_sidebar('Request For Proposal'); ?></div>
+	<!-- <div class="request_btn"><?php dynamic_sidebar('Request For Proposal'); ?></div> -->
 
 
 
@@ -52,7 +69,7 @@
 
 
 
-    <div class="clear"></div>
+    <div class="clear foot-pad"></div>
 
     <div class="footer_nav">
 
@@ -136,7 +153,7 @@
     <div class=" clrflt"></div>
 
 		<div id="subscribe">
-			<center><h1 style="font-size: 44px;">Request for Proposal:</h1</center>
+			<center><h1 style="font-size: 44px;">Subscribe for Updates:</h1</center>
 			<?php
 			echo do_shortcode('[gravityform id="1" title="false" description="false"]');
 			?>

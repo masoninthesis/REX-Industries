@@ -28,8 +28,14 @@ body {
 
 /* Header */
 
+.banner-img {
+  height:300px;
+  width:100%;
+  background:url('http://www.rexindustries.com/wp-content/uploads/2016/03/slide3.jpg');
+}
+
 .banner_info {
-    width: 100%!important;
+    width: 93%!important;
     float: right!important;
     padding: 6vh!important;
 		position: inherit!important;
@@ -250,16 +256,24 @@ body {
 
 /* Responsive & Media Queries */
 @media only screen and (max-width: 500px) {
+  .banner-img {
+    height:425px;
+  }
+
   .banner_info {
     font-size: 58px;
   }
-
-
   .banner_info {
       font-size: 96px!important;
-      line-height: .9em!important;
+      line-height: 1.2em!important;
+      text-align: center!important;
+      float: none!important;
     }
 
+  .want h2 {
+    font-size: 72px!important;
+    line-height: 120px!important;
+  }
 
   .click_here {
     display: none;
@@ -301,7 +315,7 @@ body {
   }
 
   .clientlogo {
-    width: 100%!important;
+    display:none!important;
   }
   .want {
     width: 100%!important;
@@ -317,6 +331,9 @@ body {
     float: none!important;
     margin-top: 36px!important;
   }
+  .content_left a {
+    text-align: center!important;
+  }
   .content_left.cont_right {
     display: none!important;
   }
@@ -326,12 +343,13 @@ body {
   .want p {
     line-height: 62px!important;
     font-size: 50px!important;
-    text-align: center!important;
-  }
+    text-align: left!important;
+    padding: 80px!important;
+}
   .content_left p {
     line-height: 62px!important;
     font-size: 50px!important;
-    text-align: center!important;
+    padding: 80px!important;
   }
   .content_left a {
     font-size: 70px!important;
@@ -341,13 +359,25 @@ body {
   .widget-title a {
     line-height: 252px!important;
   }
+  .cta-btns {
+    padding-top: 48px!important;
+  }
   .footer_nav {
     display: none!important;
+  }
+  #social-icons>a:nth-of-type(1):before {
+    font-size: 50px;
+  }
+  #social-icons>a:nth-of-type(2):before {
+    font-size: 50px;
+  }
+  #social-icons>a:nth-of-type(3):before {
+    font-size: 50px;
   }
   #social-icons>a {
     padding-top: 50px;
     width: 140px;
-    height: 68px;
+    height: 84px;
   }
   #subscribe>center>h1 {
     font-size: 52px!important;
@@ -363,9 +393,147 @@ body {
     font-size: 42px!important;
     line-height: 72px!important;
   }
+  .copyright {
+    font-size: 22px!important;
+    padding: 40px 0 0 0!important;
+  }
+  #footer {
+    height: 133%!important;
+  }
+
+  /* POWER PAGE */
+  .energy_cont h1 {
+    font-size: 100px!important;
+    padding: 50px 0 0 0!important;
+  }
+  .energy_cont p {
+    line-height: 60px!important;
+    padding: 80px!important;
+  }
+  .category_cont {
+    font-size: 48px!important;
+  }
+  .sidebar, .rightsidebar {
+    display: none!important;
+  }
+  .category_cont {
+    width: 93%!important;
+  }
+  .content h2 {
+    font-size: 54px!important;
+    color: white!important;
+  }
+}
+
+/* CTA buttons */
+
+/*==========  Variables  ==========*/
+/*==========  Styles  ==========*/
+
+.rr > a > div > h2 {
+  text-transform: uppercase!important;
+  padding-top: 69px!important;
+  font-size: 24px!important;
+  color: #050505;
+  margin-left: -20px;
+}
+
+.rr > a > div > h2:hover {
+  color: white;
+}
+
+.rr > a > div {
+  text-align: center;
+}
+
+.rr {
+  position: relative;
+  height: 160px;
+  background: #FDBD00;
+}
+.rr.rr-left {
+  z-index: 1;
+  float: left;
+  width: 55%;
+}
+.rr.rr-right {
+  z-index: 2;
+  float: right;
+  width: 44%;
+}
+
+.rr:after,
+.rr:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 0;
+}
+
+.rr-left:after {
+  right: 0;
+  border-left: 100px solid #FDBD00;
+  border-bottom: 160px solid #050505;
+}
+
+.rr-right:before {
+  left: -100px;
+  border-right: 100px solid #FDBD00;
+  border-top: 160px solid transparent;
+}
+
+.rr-left > div {
+  margin-right: 100px;
+  margin-left: 50px;
+}
+
+.rr-right > div {
+  margin-right: 50px;
+  margin-left: 25px;
+}
+
+.rr:hover {
+  background: #ca9700;
+}
+
+.rr-left:hover:after {
+  border-left-color: #ca9700;
+}
+
+.rr-right:hover:before {
+  border-right-color: #ca9700;
 }
 
 
+.foot-pad {
+  padding-top: 40px;
+}
+
+.rfp > a {
+  font-size: 16px!important;
+  color: #FDBD00!important;
+}
+
+.rfp > a:hover {
+  color: #ca9700;
+}
+
+.footer_nav h3 {
+    color: #fff!important;
+}
+
+.footer_nav ul li a {
+    color: #acacac!important;
+}
+
+#footer .vcard .fn {
+    color: white!important;
+}
+
+.adr {
+  color: #acacac!important;
+}
 
 /* Jackalope CSS End */
 
@@ -920,7 +1088,7 @@ padding-top: 38px;
 	}
 
 .request_btn {
-	background:url(img/request_btn.jpg) no-repeat left top  #FDBD00;
+	background:url(img/request_btn.jpg) no-repeat left top #050505;
 	width:293px;
 	height:45px;
 	text-align:center;
