@@ -255,7 +255,15 @@ body {
 
 
 /* Responsive & Media Queries */
+.mobile-only {
+  display: none;
+}
+
 @media only screen and (max-width: 500px) {
+  .mobile-only {
+    display: inherit!important;
+  }
+
   .banner-img {
     height:425px;
   }
@@ -401,7 +409,7 @@ body {
     height: 133%!important;
   }
 
-  /* POWER PAGE */
+  /* POWER PAGE MOBILE */
   .energy_cont h1 {
     font-size: 100px!important;
     padding: 50px 0 0 0!important;
@@ -423,6 +431,12 @@ body {
     font-size: 54px!important;
     color: white!important;
   }
+}
+
+/* POWER PAGE MOBILE */
+
+.service-active {
+  border: 5px solid #f4c41a!important;
 }
 
 /* CTA buttons */
