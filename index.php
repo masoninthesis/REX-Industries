@@ -49,8 +49,13 @@ get_header(); ?>
             <?php dynamic_sidebar('ourservices'); ?>
         </div>
         <div class="clear"></div>
+        <h3 class="see-shop">See Our Shop:</h3>
     </div><!--end Content-->
+    <div class="home-video">
+      <?php dynamic_sidebar('QUESTIONS'); ?>
+    </div>
 </div><!--end Wrapper-->
 
 <?php //get_sidebar(); ?>
+
 <?php get_footer(); ?>
