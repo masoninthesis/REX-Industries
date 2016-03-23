@@ -18,27 +18,28 @@ get_header(); ?>
         <img src="<?php bloginfo('template_url'); ?>/img/banner_inner.jpg" alt="">
         <span>INDUSTRIAL STEEL MANUFACTURNG SINCE 1937</span>
     </div><!--end Banner Inner-->
-    
+
     <div class="content"><!--start Content-->
     	<div class="sidebar">
         	<div class="side_nav">
-            	<ul>
+            	<!-- <ul>
                 	<li><a href="#"><img src="<?php bloginfo('template_url'); ?>/img/side_nav_pic1.jpg" alt=""><span><em>ENERGY</em></span></a></li>
                     <li class="icon2"><a href="#"><img src="<?php bloginfo('template_url'); ?>/img/side_nav_pic2.jpg" alt=""><span><em>POWER</em></span></a></li>
                     <li class="icon3"><a href="#"><img src="<?php bloginfo('template_url'); ?>/img/side_nav_pic3.jpg" alt=""><span><em>MINING</em></span></a></li>
                     <li class="icon4"><a href="#"><img src="<?php bloginfo('template_url'); ?>/img/side_nav_pic4.jpg" alt=""><span><em>CUSTOM</em></span></a></li>
-                </ul>
+                </ul> -->
+                <?php wp_nav_menu( array('menu' => 'side_nav', 'menu_id' => '',  'menu_class' => '', 'container' => ''  )); ?>
             </div>
             <div class="question">
             	<h2>QUESTIONS?</h2>
                 <p>OUR EXPERIENCED STAFF IS <br>HERE TO HELP.  <a href="#">CONTACT US</a>.</p>
             </div>
-            
+
             <div class="celebration">
             	CELEBRATING<br> <span>77 YEARS</span> OF AMERICAN MANUFACTURING
             </div>
         </div>
-        
+
         <div class="category_cont">
         	<div class="energy_cont">
             	<img src="<?php bloginfo('template_url'); ?>/img/energy_pic.jpg" alt="">
