@@ -99,6 +99,18 @@ wp_reset_query();
 
         </div>
         <div class="clear"></div>
+
+        <div class="banner_thumb mobile-only">
+        <h1 class="prohecttitle">SELECT A PROJECT CATEGORY</h1>
+          <ul>
+              <li class="icon2 service-active"><a href="http://www.rexindustries.com/power/"><img src="<?php bloginfo('template_url'); ?>/img/thumb_pic2.jpg" alt=""><span><em>POWER</em></span></a></li>
+              <li><a href="http://www.rexindustries.com/energy/"><img src="<?php bloginfo('template_url'); ?>/img/thumb_pic1.jpg" alt=""><span><em>Energy</em></span></a></li>
+              <li class="icon3"><a href="http://www.rexindustries.com/mining/"><img src="<?php bloginfo('template_url'); ?>/img/thumb_pic3.jpg" alt=""><span><em>MINING</em></span></a></li>
+              <li class="nomrgn icon4"><a href="http://www.rexindustries.com/custom/"><img src="<?php bloginfo('template_url'); ?>/img/thumb_pic4.jpg" alt=""><span><em>CUSTOM</em></span></a></li>
+          </ul>
+        <!-- <?php wp_nav_menu( array('menu' => 'home-nav', 'menu_id' => '',  'menu_class' => '', 'container' => ''  )); ?> -->
+            <div class="clear"></div>
+        </div>
     </div><!--end Content-->
 </div><!--end Wrapper-->
 

@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: energy
+ * Template Name: mining
  *
  * A custom page template without sidebar.
  *
@@ -24,8 +24,6 @@ while(have_posts()): the_post();
         <span><?php echo get_post_meta($post->ID, 'value', true) ?></span>
     </div><!--end Banner Inner-->
 
-<<<<<<< HEAD
-=======
 
 <?php
 endwhile;
@@ -33,7 +31,6 @@ wp_reset_query();
 ?>
 
 
->>>>>>> origin/master
     <div class="content"><!--start Content-->
     	<div class="sidebar">
         <div class="question">
@@ -41,31 +38,16 @@ wp_reset_query();
             </div>
 
         	<div class="side_nav">
-<<<<<<< HEAD
-            	<!-- <ul>
-=======
             	<!--<ul>
->>>>>>> origin/master
                 	<li><a href="#"><img src="<?php bloginfo('template_url'); ?>/img/side_nav_pic1.jpg" alt=""><span><em>ENERGY</em></span></a></li>
                     <li class="icon2"><a href="#"><img src="<?php bloginfo('template_url'); ?>/img/side_nav_pic2.jpg" alt=""><span><em>POWER</em></span></a></li>
                     <li class="icon3"><a href="#"><img src="<?php bloginfo('template_url'); ?>/img/side_nav_pic3.jpg" alt=""><span><em>MINING</em></span></a></li>
                     <li class="icon4"><a href="#"><img src="<?php bloginfo('template_url'); ?>/img/side_nav_pic4.jpg" alt=""><span><em>CUSTOM</em></span></a></li>
-<<<<<<< HEAD
-                </ul> -->
-                <?php wp_nav_menu( array('menu' => 'side_nav', 'menu_id' => '',  'menu_class' => '', 'container' => ''  )); ?>
-            </div>
-            <div class="question">
-            	<h2>QUESTIONS?</h2>
-                <p>OUR EXPERIENCED STAFF IS <br>HERE TO HELP.  <a href="#">CONTACT US</a>.</p>
-            </div>
-
-=======
                 </ul>-->
 				<?php wp_nav_menu( array('menu' => 'side_nav', 'menu_id' => '',  'menu_class' => '', 'container' => ''  )); ?>
             </div>
 
 
->>>>>>> origin/master
             <div class="celebration">
               <div class="textwidget">CELEBRATING<br> <span>
                 <!-- COMPANY BIRTHDAY SCRIPT -->
@@ -122,8 +104,8 @@ wp_reset_query();
         <h1 class="prohecttitle">SELECT A PROJECT CATEGORY</h1>
           <ul>
               <li class="icon2"><a href="http://www.rexindustries.com/power/"><img src="<?php bloginfo('template_url'); ?>/img/thumb_pic2.jpg" alt=""><span><em>POWER</em></span></a></li>
-              <li class="service-active"><a href="http://www.rexindustries.com/energy/"><img src="<?php bloginfo('template_url'); ?>/img/thumb_pic1.jpg" alt=""><span><em>Energy</em></span></a></li>
-              <li class="icon3"><a href="http://www.rexindustries.com/mining/"><img src="<?php bloginfo('template_url'); ?>/img/thumb_pic3.jpg" alt=""><span><em>MINING</em></span></a></li>
+              <li><a href="http://www.rexindustries.com/energy/"><img src="<?php bloginfo('template_url'); ?>/img/thumb_pic1.jpg" alt=""><span><em>Energy</em></span></a></li>
+              <li class="icon3 service-active"><a href="http://www.rexindustries.com/mining/"><img src="<?php bloginfo('template_url'); ?>/img/thumb_pic3.jpg" alt=""><span><em>MINING</em></span></a></li>
               <li class="nomrgn icon4"><a href="http://www.rexindustries.com/custom/"><img src="<?php bloginfo('template_url'); ?>/img/thumb_pic4.jpg" alt=""><span><em>CUSTOM</em></span></a></li>
           </ul>
         <!-- <?php wp_nav_menu( array('menu' => 'home-nav', 'menu_id' => '',  'menu_class' => '', 'container' => ''  )); ?> -->
